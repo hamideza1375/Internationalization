@@ -1,6 +1,6 @@
 {
     "home": {
-        "appName": "Quiz Application",
+        "title": "Internationalization",
         "appStartBtn": "user panel"
     },
     "user": {

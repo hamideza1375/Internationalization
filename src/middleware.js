@@ -31,6 +31,7 @@ export function middleware(request) {
     const locale = getLocale(request);
 
     
+    
     if(!pathname.startsWith(locale))
     return NextResponse.redirect(
         new URL(

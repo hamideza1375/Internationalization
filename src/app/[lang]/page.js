@@ -9,7 +9,7 @@ export default async function Home({ params }) {
         <main className="container mx-auto">
             <div className="text-center">
                 <h1 className="text-3xl mt-10 mb-10 text-center">
-                    {t.appName}
+                    {t.title}
                 </h1>
                 <Link href={`${lang}/user`}>
                     <button
