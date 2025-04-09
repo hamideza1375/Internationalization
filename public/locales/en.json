@@ -1,0 +1,19 @@
+{
+    "home": {
+        "appName": "Quiz Application",
+        "appStartBtn": "user panel"
+    },
+    "user": {
+        "title": "profile"
+    },
+    "notFound": {
+        "title": "404",
+        "description": "Something went wrong",
+        "goToHome": "goToHome"
+    },
+    "error": {
+        "title": "Error",
+        "description": "Something went wrong",
+        "try_again": "Try again"
+    }
+}

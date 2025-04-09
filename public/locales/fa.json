@@ -1,0 +1,19 @@
+{
+    "home": {
+        "appName": "اپلیکیشن کوئیز",
+        "appStartBtn": "پنل کاربری"
+    },
+    "user": {
+        "title": "پروفایل"
+    },
+    "notFound": {
+        "title": "404",
+        "description": "صفحه ی مورد نظر پیدا نشد",
+        "goToHome": "صفحه ی اصلی"
+    },
+    "error": {
+        "title": "خطا",
+        "description": "مشکلی پیش آمده است",
+        "try_again": "دوباره امتحان کنید"
+    }
+}
