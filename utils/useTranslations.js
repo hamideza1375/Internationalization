@@ -10,7 +10,7 @@ import fa from '@/public/locales/fa.json';
 import en from '@/public/locales/en.json';
 import { useParams } from 'next/navigation';
 
-export default function clientTranslations() {
+export default function useTranslations() {
     const {lang} = useParams();
     return lang?.startsWith('fa') ? fa : en;
 }

@@ -1,11 +1,11 @@
 'use client'
 import Link from "next/link";
-import translations from '@/utils/clientTranslations';
+import useTranslations from '@/utils/useTranslations';
 import { useParams } from "next/navigation";
 
 export default function User() {
     const {lang} = useParams();
-    const t = translations().user;
+    const t = useTranslations().user;
 
     return (
         <main className="container mx-auto">

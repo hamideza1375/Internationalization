@@ -2,14 +2,14 @@
 
 import getCookie from '@/utils/getCookie';
 import { useEffect, useState } from 'react';
-import translations from '@/utils/clientTranslations';
+import useTranslations from '@/utils/useTranslations';
 
 export default function products(/* { t, lang } */) {
     const [show, setShow] = useState(false);
     const [products, setProducts] = useState([]);
 
 	 const lang = getCookie('lang');
-     const t = translations().home;
+     const t = useTranslations().home;
      
 
     useEffect(() => {

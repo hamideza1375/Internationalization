@@ -30,9 +30,9 @@ export async function middleware(request) {
 
     const locale = getLocale(request);
     
+    const cookieStore = await cookies();
+
     if (!pathname.startsWith(locale)) {
-        const cookieStore = await cookies();
-        cookieStore.set('lang', locale);
         return NextResponse.redirect(
             new URL(
                 `/${cookieStore.get('lang')?.value || locale}${pathname.startsWith('/') ? '' : '/'}${pathname}`,

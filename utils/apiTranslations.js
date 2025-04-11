@@ -5,5 +5,6 @@ import { cookies } from 'next/headers';
 
 export default async function apiTranslations () {
 	const cookieStore = await cookies();
-	return (cookieStore.get('lang')?.value === 'fa') ? fa : en
+	const lang = cookieStore.get('lang')?.value;
+	return (lang === 'fa') ? fa : en
 }
