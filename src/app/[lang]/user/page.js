@@ -1,11 +1,11 @@
 'use client'
 import Link from "next/link";
-import translations from '@/public/locales';
+import translations from '@/utils/clientTranslations';
 import { useParams } from "next/navigation";
 
 export default function User() {
     const {lang} = useParams();
-    const t = translations(lang).user;
+    const t = translations().user;
 
     return (
         <main className="container mx-auto">
@@ -14,7 +14,7 @@ export default function User() {
                     {t.title}
                 </h1>
                 <Link href={`/${lang}`} className="text-3xl mt-10 mb-10 text-center">
-                    {'home'}
+                    {'<'}
                 </Link>
             </div>
         </main>

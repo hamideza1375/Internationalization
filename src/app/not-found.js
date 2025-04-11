@@ -1,5 +1,5 @@
 'use client';
-import translations from '@/public/locales';
+import translations from '@/utils/translations';
 import { usePathname, useRouter } from 'next/navigation';
 // import Error from 'next/error';
 

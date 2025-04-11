@@ -1,5 +1,6 @@
 'use client';
 import { useRouter, usePathname } from 'next/navigation';
+import { setCookie } from '@/utils/setCookie';
 
 export default function LanguageSwitcher() {
     const router = useRouter();
@@ -10,6 +11,7 @@ export default function LanguageSwitcher() {
         // حذف پیشوند زبان فعلی از مسیر
         const pathWithoutLang = pathname.replace(/^\/(fa|en)/, '');
         // هدایت به مسیر جدید با زبان انتخاب شده
+        setCookie('lang', newLang)
         router.push(`/${newLang}${pathWithoutLang}`);
     };
 

@@ -1,5 +1,5 @@
 'use client';
-import translations from '@/public/locales';
+import translations from '@/utils/translations';
 import { usePathname } from 'next/navigation';
 import { useEffect } from 'react';
 

@@ -1,7 +1,8 @@
 {
     "home": {
         "title": "Internationalization",
-        "appStartBtn": "user panel"
+        "appStartBtn": "user panel",
+        "showProducts": "show products"
     },
     "user": {
         "title": "profile"

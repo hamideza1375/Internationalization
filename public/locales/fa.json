@@ -1,7 +1,9 @@
 {
     "home": {
         "title": "بین المللی سازی",
-        "appStartBtn": "پنل کاربری"
+        "appStartBtn": "پنل کاربری",
+        "showProducts": "نمایش محصولات"
+        
     },
     "user": {
         "title": "پروفایل"
