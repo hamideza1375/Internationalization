@@ -11,6 +11,8 @@ export default function products(/* { t, lang } */) {
 	 const lang = getCookie('lang');
      const t = useTranslations().home;
      
+     console.log(lang);
+     
 
     useEffect(() => {
         fetch(`http://localhost:3000/${lang}/api/products`)
@@ -28,8 +30,8 @@ export default function products(/* { t, lang } */) {
             <br />
             <div>
                 {show &&
-                    products.map(product => (
-                        <div key={product.id}>
+                    products.map((product) => (
+                        <div key={product._id}>
                             <h1>{product.title}</h1>
                         </div>
                     ))}
